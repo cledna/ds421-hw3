@@ -1,0 +1,21 @@
+---
+title: "HW 3"
+authors: Catherine Ledna, Samira Siddique, James Sayre
+output: html_notebook
+---
+
+We cloned the repository, located at https://github.com/ecohealthalliance/HP3/tree/v0.2.0. We have decided that our goal is to replicate 
+
+
+```{r}
+install.packages("cowplot")
+#install.packages("svglite")
+#install.packages("gdtools")
+source("HP3/scripts/07-make-maps.R") 
+
+# We originally wanted to run Script 05 to make Figure 4, the box plot. However, gdtools and svglite failed to install, so we changed our goal to running script 07 to make maps. 
+# However, the shapefiles necessary for the maps were not included in the repository, so we were unable to replicate anything so far. 
+
+
+```
+
