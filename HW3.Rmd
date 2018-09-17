@@ -1,20 +1,31 @@
 ---
-title: "HW 3"
+title: "Unit three- Disease Pandemics"
 authors: Catherine Ledna, Samira Siddique, James Sayre
+date: "September 17, 2018"
 output: html_notebook
 ---
 
 We cloned the repository, located at https://github.com/ecohealthalliance/HP3/tree/v0.2.0. We have decided that our goal is to replicate 
 
-
-```{r}
-install.packages("cowplot")
-#install.packages("svglite")
-#install.packages("gdtools")
-source("HP3/scripts/07-make-maps.R") 
-
 # We originally wanted to run Script 05 to make Figure 4, the box plot. However, gdtools and svglite failed to install, so we changed our goal to running script 07 to make maps. 
 # However, the shapefiles necessary for the maps were not included in the repository, so we were unable to replicate anything so far. 
+
+##Objective
+Our main objectives were to reproduce Figures 3 and 4 from the Olival et al paper.
+
+##Progress
+1. We identified the github link (Located at https://github.com/ecohealthalliance/HP3/tree/v0.2.0.) Wwhich included the R script and data to reproduce the plots in the paper 
+2. Sifted through the folder to find the appropriate R script and data 
+3. Used the R script to try to reproduce Figures 3 and 4
+4. Had trouble running script because a few of the packages weren't updating correctly, couldn't work through setting up a new working directory
+
+##Stumbling blocks
+The main stumbling block for this project was setting the working directory to properly run the code, and running the right packages. The authors also did not clone the shape files, so we had to go through the R script to try to find them. 
+
+We were not sure if the authors had set their working directory relative to an rstudio root file, which unfortunately didn't work on our computer so we had to manually redirect the working directory in the code. We also had trouble with the gdtools package, which is essential to replotting Figure 4. It was unclear if the authors had built an r project file and put all their shape files in there because there is better storage that way. So we were not sure if we should locally install their library. 
+
+##Results
+We were unable to reproduce the plots from the paper (Figures 3 and 4) because we kept getting error messages due to packages, working directory, and location of shape files. 
 
 
 ```
